@@ -14,9 +14,77 @@
 	<h1>Sign up for Whoo!</h1>
 	<h4>50 projects, 500 images, 10 videos, domain binding, and techical support</h4>
 	<form action="/whoo-signup-page" method="post">
+
+		<h2>1 First, name your portfolio</h2>
 		<div>
-			<label for="name">Name:</label>
-			<input type="text" id="name" />
+			<label for="portfolio-name">Portfolio name</label>
+			<input type="text" id="portfolio-name" required />
+		</div>
+		<div>
+			<label for="portfolio-address" id="portfolio-address">Portfolio address</label>
+			<input type="url" id="portfolio-address" required />
+		</div>	
+
+		<h2>2 Now, enter your account details</h2>
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" required />
+		</div>
+		<div>
+			<label for="email-address" id="email-address">Email</label>
+			<input type="email" id="email-address" required />
+		</div>
+		<h6>NOTE: We'll never share your email, promise.</h6>
+		<div>
+			<label for="password" id="password">Password</label>
+			<input type="password" id="password" required />
+		</div>
+
+		<h2>3 Finally, enter your payment information</h2>
+		<div>
+			<label for="card-number">Card number</label>
+			<input type="text" id="card-number" required />
+			<select name="card-type" required>
+				<option value="amex">American Express</option>
+				<option value="visa">Visa</option>
+				<option value="discover">Discover</option>
+				<option value="mastercard">MasterCard</option>
+			</select>
+		</div>
+		<div>
+			<label for="security-code" id="security-code">Security Code</label>
+			<input type="text" id="security-code" required />
+		</div>	
+		<div>
+			<label for="expiration-date" id="expiration-date">Expiration date</label>
+			<select name="month" required>
+				<option>Month</option>
+				<option value="01">01 - Jan</option>
+				<option value="02">02 - Feb</option>
+				<option value="03">03 - Mar</option>
+				<option value="04">04 - Apr</option>
+				<option value="05">05 - May</option>
+				<option value="06">06 - Jun</option>
+				<option value="07">07 - Jul</option>
+				<option value="08">08 - Aug</option>
+				<option value="09">09 - Sep</option>
+				<option value="10">10 - Oct</option>
+				<option value="11">11 - Nov</option>
+				<option value="12">12 - Dec</option>
+			</select>
+			<select name="year" required>
+				<option>Year</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="06">2020</option>
+			</select>
+		</div>		
+
+		<div>
+			<button type="submit">Create your portfolio</button>
 		</div>
 	</form>
 </body>
