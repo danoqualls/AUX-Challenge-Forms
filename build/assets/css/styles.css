@@ -1,1 +1,36 @@
 /* Your CSS goes here */
+body {
+	background-color: #b3e3ff;
+}
+#foreground {
+	background-color: white;
+	border-radius: 1em;
+	width: 95%;
+	margin: 0 auto;
+}
+#top-bar {
+	background-color: #12627a;
+	color: white;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+#top-bar h4 {
+	color: #b1e3ff
+}
+.round-number {
+	background-color: #52a3d4;
+	color: white;
+}
+#main-section h2 {
+	color: #0a5e78;
+}
+fieldset {
+	background-color: #f3f5f5;
+	border: none;
+	border-radius: 0.5em;
+	width: 90%;
+	margin: 0 auto;
+}
+fieldset h2{
+	color: #444444;
+}

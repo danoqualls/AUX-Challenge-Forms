@@ -21,52 +21,64 @@
 	<div id="main-section"
 		<form action="/whoo-signup-page" method="post">
 							
-			<h2><span>1</span> First, name your portfolio</h2>
+			<h2><span class="round-number">1</span> First, name your portfolio</h2>
 			<fieldset>
 				<div>
 					<label for="portfolio-name">Portfolio name</label>
+					<br />
 					<input type="text" id="portfolio-name" required />
 				</div>
 				<div>
 					<label for="portfolio-address" id="portfolio-address">Portfolio address</label>
+					<br />
 					<input type="url" id="portfolio-address" required />
 					<span>.sample.com</span>
 				</div>	
 			</fieldset>
 
-				<h2><span>2</span> Now, enter your account details</h2>
+				<h2><span class="round-number">2</span> Now, enter your account details</h2>
 				<fieldset>
 				<div>
 					<label for="name">Name</label>
+					<br />
 					<input type="text" id="name" required />
 				</div>
 				<div>
 					<label for="email-address" id="email-address">Email</label>
+					<br />
 					<input type="email" id="email-address" required />
 				</div>
 				<h6>NOTE: We'll never share your email, promise.</h6>
 				<div>
 					<label for="password" id="password">Password</label>
+					<br />
 					<input type="password" id="password" required />
 				</div>
 			</fieldset>
 
-			<h2><span>3</span> Finally, enter your payment information</h2>
+			<h2><span class="round-number">3</span> Finally, enter your payment information</h2>
 			<fieldset>
 				<div>
 					<label for="card-number">Card number</label>
+					<br />
 					<input type="text" id="card-number" maxlength="16" required />
-					<input type="radio" name="editList" value="amex">American Express
-					<input type="radio" name="editList" value="visa">Visa
-					<input type="radio" name="editList" value="discover">Discover
-					<input type="radio" name="editList" value="mastercard">MasterCard
+					<input type="radio" id="American Express" name="editList" value="amex">
+					<label for="American Express">American Express</label>
+					<input type="radio" id="Visa" name="editList" value="visa">
+					<label for="Visa">Visa</label>
+					<input type="radio" id="Discover" name="editList" value="discover">
+					<label for="Discover">Discover</label>
+					<input type="radio" id="MasterCard" name="editList" value="mastercard">
+					<label for="MasterCard">MasterCard</label>
 				</div>
 				<div>
 					<label for="security-code" id="security-code">Security Code</label>
+					<br />
 					<input type="text" id="security-code" maxlength="4" required />
 				</div>	
 				<div>
 					<label for="expiration-date" id="expiration-date">Expiration date</label>
+					<br />
 					<select name="month" required>
 						<option disabled >Month</option>
 						<option value="01">01 - Jan</option>
