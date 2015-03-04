@@ -63,15 +63,25 @@
 					<label for="card-number" class="input-text">Card number</label>
 					<br />
 					<input type="text" id="card-number" maxlength="16" class="input-fields" required />
-					<input type="radio" id="American Express" name="editList" value="amex">
-					<label for="American Express">American Express</label>
-					<input type="radio" id="Visa" name="editList" value="visa">
-					<label for="Visa">Visa</label>
-					<input type="radio" id="Discover" name="editList" value="discover">
-					<label for="Discover">Discover</label>
-					<input type="radio" id="MasterCard" name="editList" value="mastercard">
-					<label for="MasterCard">MasterCard</label>
 				</div>
+				<ul>
+					<li>
+						<input class="card-button" type="radio" id="American Express" name="editList" value="amex">
+						<label class="card-label" for="American Express">American Express</label>
+					</li>
+					<li>
+						<input class="card-button" type="radio" id="Visa" name="editList" value="visa">
+						<label class="card-label" for="Visa">Visa</label>
+					</li>
+					<li>
+						<input class="card-button" type="radio" id="Discover" name="editList" value="discover">
+						<label class="card-label" for="Discover">Discover</label>
+					</li>
+					<li>
+						<input class="card-button" type="radio" id="MasterCard" name="editList" value="mastercard">
+						<label class="card-label" for="MasterCard">MasterCard</label>
+					</li>
+				</ul>
 				<div>
 					<label for="security-code" id="security-code" class="input-text">Security Code</label>
 					<br />
@@ -106,11 +116,14 @@
 					</select>
 				</div>		
 			</fieldset>
-<input type="checkbox" id="c1" name="cc" />
-<label for="c1"><span></span>Check Box 1</label>
+
 			<div>
 				<button type="submit" >Create your portfolio</button>
 			</div>
+
+<input type="checkbox" id="c1" name="cc" />
+<label for="c1"><span></span>Check Box 1</label>
+
 		</form>
 	</div><!--end "main-section"-->
 </div><!--end "foreground"-->
