@@ -1,11 +1,13 @@
 /* Your CSS goes here */
 body {
 	background-color: #b3e3ff;
+	font-family: "Merriweather", "Open Sans", sans-serif;
 }
 #foreground {
 	background-color: white;
 	border-radius: 1em;
 	width: 95%;
+	max-width: 900px;
 	margin: 0 auto;
 }
 #top-bar {
@@ -24,6 +26,11 @@ body {
 #main-section h2 {
 	color: #0a5e78;
 }
+.round-number {
+	width: 30px;
+	border-radius: 30px;
+	text-indent: -100px;
+}
 fieldset {
 	background-color: #f3f5f5;
 	border: none;
@@ -31,6 +38,41 @@ fieldset {
 	width: 90%;
 	margin: 0 auto;
 }
-fieldset h2{
-	color: #444444;
+fieldset label {
+	color: #9b9c9c;
+	font-family: "Open Sans", sans-serif;
+}
+fieldset h6 {
+	color: #9b9c9c;
+	font-family: "Open Sans", sans-serif;
+}
+input {
+	width: 95%;
+	height: 44px;
+	margin: 0 auto;
+}
+.input-text {
+	margin-bottom: 100px;
+}
+.input-fields {
+	border-radius: 1em;
+	height: 30px;
+}
+.portfolio-address-input {
+	width: 75%;
+	border-top-right-radius: 0em;
+	border-bottom-right-radius: 0em;
+}
+.sample {
+	background-color: white;
+	border: 1px black solid;
+	border-radius: 1em;
+	border-top-left-radius: 0em;
+	border-bottom-left-radius: 0em;
+	height: 200px;
+}
+button {
+	font-family: "Merriweather", "Open Sans", sans-serif;
+	margin: 0 auto;
+	text-align: center;
 }

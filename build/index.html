@@ -3,9 +3,10 @@
 <head>
   <title>Whoo! Signup Form</title>
   
-  <link href="assets/css/styles.css" rel="stylesheet">
-  <link rel="dns-prefetch" href="//ajax.googleapis.com">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+ 	<link href="assets/css/styles.css" rel="stylesheet">
+ 	<link rel="dns-prefetch" href="//ajax.googleapis.com">
+ 	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   
   <meta charset="UTF-8">
   <meta http-equiv="cleartype" content="on">
@@ -19,49 +20,49 @@
 	</div>
 
 	<div id="main-section"
-		<form action="/whoo-signup-page" method="post">
+		<form id="signup-form" action="/whoo-signup-page" method="post">
 							
 			<h2><span class="round-number">1</span> First, name your portfolio</h2>
 			<fieldset>
 				<div>
-					<label for="portfolio-name">Portfolio name</label>
+					<label for="portfolio-name" class="input-text">Portfolio name</label>
 					<br />
-					<input type="text" id="portfolio-name" required />
+					<input type="text" id="portfolio-name" class="input-fields" required />
 				</div>
 				<div>
-					<label for="portfolio-address" id="portfolio-address">Portfolio address</label>
+					<label for="portfolio-address" id="portfolio-address" class="input-text">Portfolio address</label>
 					<br />
-					<input type="url" id="portfolio-address" required />
-					<span>.sample.com</span>
+					<input type="url" id="portfolio-address" class="input-fields portfolio-address-input" required />
+					<span class="sample">.sample.com</span>
 				</div>	
 			</fieldset>
 
 				<h2><span class="round-number">2</span> Now, enter your account details</h2>
 				<fieldset>
 				<div>
-					<label for="name">Name</label>
+					<label for="name" class="input-text">Name</label>
 					<br />
-					<input type="text" id="name" required />
+					<input type="text" id="name" class="input-fields" required />
 				</div>
 				<div>
-					<label for="email-address" id="email-address">Email</label>
+					<label for="email-address" id="email-address" class="input-text">Email</label>
 					<br />
-					<input type="email" id="email-address" required />
+					<input type="email" id="email-address" class="input-fields" required />
 				</div>
 				<h6>NOTE: We'll never share your email, promise.</h6>
 				<div>
-					<label for="password" id="password">Password</label>
+					<label for="password" id="password" class="input-text">Password</label>
 					<br />
-					<input type="password" id="password" required />
+					<input type="password" id="password" class="input-fields" required />
 				</div>
 			</fieldset>
 
 			<h2><span class="round-number">3</span> Finally, enter your payment information</h2>
 			<fieldset>
 				<div>
-					<label for="card-number">Card number</label>
+					<label for="card-number" class="input-text">Card number</label>
 					<br />
-					<input type="text" id="card-number" maxlength="16" required />
+					<input type="text" id="card-number" maxlength="16" class="input-fields" required />
 					<input type="radio" id="American Express" name="editList" value="amex">
 					<label for="American Express">American Express</label>
 					<input type="radio" id="Visa" name="editList" value="visa">
@@ -72,12 +73,12 @@
 					<label for="MasterCard">MasterCard</label>
 				</div>
 				<div>
-					<label for="security-code" id="security-code">Security Code</label>
+					<label for="security-code" id="security-code" class="input-text">Security Code</label>
 					<br />
-					<input type="text" id="security-code" maxlength="4" required />
+					<input type="text" id="security-code" maxlength="4" class="input-fields" required />
 				</div>	
 				<div>
-					<label for="expiration-date" id="expiration-date">Expiration date</label>
+					<label for="expiration-date" id="expiration-date" class="input-text">Expiration date</label>
 					<br />
 					<select name="month" required>
 						<option disabled >Month</option>
@@ -105,9 +106,10 @@
 					</select>
 				</div>		
 			</fieldset>
-
+<input type="checkbox" id="c1" name="cc" />
+<label for="c1"><span></span>Check Box 1</label>
 			<div>
-				<button type="submit">Create your portfolio</button>
+				<button type="submit" >Create your portfolio</button>
 			</div>
 		</form>
 	</div><!--end "main-section"-->
