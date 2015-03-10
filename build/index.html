@@ -13,8 +13,9 @@
 
 </head>
 <body>
-<div id="foreground">	
-	<div id="top-bar">
+
+<div class="main">	
+	<div class="heading">
 		<h1>Sign up for Whoo!</h1>
 		<h4>50 projects, 500 images, 10 videos, domain binding, and techical support</h4>
 	</div>
@@ -60,37 +61,38 @@
 			<h2><span class="round-number">3</span> Finally, enter your payment information</h2>
 			<fieldset>
 				<div>
-					<label for="card-number" class="input-text">Card number</label>
+					<label for="card-number" class="input-text">Card Number</label>
 					<br />
-					<input type="text" id="card-number" maxlength="16" class="input-fields" required />
+					<input type="text" id="card-number" maxlength="16" class="input-fields cc-number" required />
 				</div>
 				<div>
-					<ul class="credit-cards">
+					<ul class="credit-card">
 						<li class="amex-pic">
-							<input type="radio" id="American Express" name="editList" value="amex">
-							<label for="American Express">American Express</label>
+							<input type="radio" id="American Express" name="cc" value="amex">
+							<label for="American Express">American Express<span></span></label>
 						</li>
 						<li class="visa-pic">
-							<input type="radio" id="Visa" name="editList" value="visa">
-							<label for="Visa">Visa</label>
+							<input type="radio" id="Visa" name="cc" value="visa">
+							<label for="Visa"><span></span></label>
 						</li>
 						<li class="discover-pic">
-							<input type="radio" id="Discover" name="editList" value="discover">
-							<label for="Discover">Discover</label>
+							<input type="radio" id="Discover" name="cc" value="discover">
+							<label for="Discover">Discover<span></span></label>
 						</li>
 						<li class="mastercard-pic">
-							<input type="radio" id="MasterCard" name="editList" value="mastercard">
-							<label for="MasterCard">MasterCard</label>
+							<input type="radio" id="MasterCard" name="cc" value="mastercard">
+							<label for="MasterCard">MasterCard<span></span></label>
 						</li>
 					</ul>
 				</div>	
+
 				<div>
 					<label for="security-code" id="security-code" class="input-text">Security Code</label>
 					<br />
-					<input type="text" id="security-code" maxlength="4" class="input-fields" required />
+					<input type="text" id="security-code" maxlength="4" class="input-fields security" required />
 				</div>	
 				<div>
-					<label for="expiration-date" id="expiration-date" class="input-text">Expiration date</label>
+					<label for="expiration-date" id="expiration-date" class="input-text dropdown-menu">Expiration date</label>
 					<br />
 					<select name="month" required>
 						<option disabled >Month</option>
@@ -119,8 +121,10 @@
 				</div>		
 			</fieldset>
 
-			<div>
-				<button type="submit" >Create your portfolio</button>
+			<div class="button-container">
+				<button type="submit" >
+					Create your portfolio
+				</button>
 			</div>
 
 		</form>
