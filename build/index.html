@@ -34,7 +34,7 @@
 					<label for="portfolio-address" id="portfolio-address" class="input-text">Portfolio address</label>
 					<br />
 					<input type="url" id="portfolio-address" class="input-fields portfolio-address-input" required />
-					<span class="sample">.sample.com</span>
+					<span class="sample"><span class="sample-text">.sample.com</span></span>
 				</div>	
 			</fieldset>
 
@@ -65,7 +65,7 @@
 					<br />
 					<input type="text" id="card-number" maxlength="16" class="input-fields cc-number" required />
 				</div>
-				<div>
+				<div class="choose-card">
 					<ul class="credit-card">
 						<li class="amex-pic">
 							<input type="radio" id="American Express" name="cc" value="amex">
@@ -73,7 +73,7 @@
 						</li>
 						<li class="visa-pic">
 							<input type="radio" id="Visa" name="cc" value="visa">
-							<label for="Visa"><span></span></label>
+							<label for="Visa">Visa<span></span></label>
 						</li>
 						<li class="discover-pic">
 							<input type="radio" id="Discover" name="cc" value="discover">
@@ -85,16 +85,21 @@
 						</li>
 					</ul>
 				</div>	
-
-				<div>
+				<br />
+				<div class="security-field">
 					<label for="security-code" id="security-code" class="input-text">Security Code</label>
 					<br />
 					<input type="text" id="security-code" maxlength="4" class="input-fields security" required />
-				</div>	
-				<div>
+					<div class="card-back-container">
+						<span class="card-back"></span>
+						<span class="card-back-amex"></span>
+					</div>
+				</div>
+				<br />
+				<div class="expiration-field">
 					<label for="expiration-date" id="expiration-date" class="input-text dropdown-menu">Expiration date</label>
 					<br />
-					<select name="month" required>
+					<select name="month" class="month-selector" required>
 						<option disabled >Month</option>
 						<option value="01">01 - Jan</option>
 						<option value="02">02 - Feb</option>
@@ -109,7 +114,7 @@
 						<option value="11">11 - Nov</option>
 						<option value="12">12 - Dec</option>
 					</select>
-					<select name="year" required>
+					<select name="year" class="year-selector" required>
 						<option disabled >Year</option>
 						<option value="2015">2015</option>
 						<option value="2016">2016</option>
@@ -122,10 +127,12 @@
 			</fieldset>
 
 			<div class="button-container">
-				<button type="submit" >
+				<button type="submit">
 					Create your portfolio
 				</button>
 			</div>
+
+
 
 		</form>
 	</div><!--end "main-section"-->

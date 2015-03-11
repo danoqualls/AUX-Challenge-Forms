@@ -63,7 +63,7 @@ fieldset {
 fieldset label {
 	color: #595a5a;
 	font-family: "Open Sans", sans-serif;
-	font-size: 0.8em;
+	font-size: 0.75em;
 }
 fieldset h6 {
 	color: #9b9c9c;
@@ -91,6 +91,8 @@ input {
 	border: none;
 	box-shadow: inset 0 8px 4px -8px rgba(0, 0, 0, 0.4);
 	font-family: "Open Sans", sans-serif;
+	font-size: 0.9em;
+	font-weight: 900;
 }
 .portfolio-address-input {
 	width: 55.77%;
@@ -102,76 +104,127 @@ input {
 	font-family: "Open Sans", sans-serif;
 	font-size: 0.9em;
 	border-radius: 0.5em;
-	height: 30px;
 	background-color: #fafafa;
 	border: none;
 	border-left: 1px solid #ebebeb;
 	box-shadow: inset 0 8px 4px -8px rgba(0, 0, 0, 0.4);
 	border-top-left-radius: 0em;
 	border-bottom-left-radius: 0em;
-	width: 28.85%;
+	width: 150px;
+	height: 32px;
 	display: inline-block;
-	margin-left: -5px;
+	margin-left: 0px;
+	float: right;
+	margin-top: 10px;
+	position: absolute;
+}
+.sample-text {
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+}
+.choose-card {
+	float: left;
+
 }
 .cc-number {
 	width: 45.77%;
+	float: left;
 }
 li {
 	list-style: none;
 	display: inline-block;
 }
-.credit-card li label {
-	text-indent: -9999px;
-	overflow: hidden;
-
+.credit-card {
+	margin-top: 8px;
+	margin-right: 0px;
 }
 
-input[type="radio"] + label {
+.credit-card li {
     display:inline-block;
 	width: 45px;
 	height: 30px;
-    background:url('../images/sprite.png') no-repeat;
     cursor:pointer;
 }
+.credit-card input {
+	display: none;
+}
 
+.credit-card label {
+	display:inline-block;
+	width: 45px;
+	height: 30px;
+    cursor:pointer;
+    text-indent: -9999px;
+}
+/*
 input[type="radio"]:unchecked + label span {
     background:url('../images/sprite.png') -19px top no-repeat;
 }
-
-.amex-pic {
-	background: url('../images/sprite.png') 0 0;
+*/
+.amex-pic label {
+	background: url('../images/sprite.png') 0px -40px no-repeat;
 }
 .visa-pic label {
-	background: url('../images/sprite.png') -48px 0;
+	background: url('../images/sprite.png') -48px -40px  no-repeat;
 }
 .discover-pic label {
-	background: url('../images/sprite.png') -96px 0;
+	background: url('../images/sprite.png') -96px -40px no-repeat;
 }
 .mastercard-pic label {
-	background: url('../images/sprite.png') -144px 0;
+	background: url('../images/sprite.png') -144px -40px no-repeat;
 }
 
-input[type="checkbox"] {
-    display:none;
+.amex-pic input[type="radio"]:checked + label {
+	background: url('../images/sprite.png') 0px 0px no-repeat;
 }
-input[type="checkbox"] + label span {
-    display:inline-block;
-    width:19px;
-    height:19px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    background:url("../images/check_radio_sheet.png") left top no-repeat;
-    cursor:pointer;
+.visa-pic input[type="radio"]:checked + label {
+	background: url('../images/sprite.png') -48px 0px  no-repeat;
 }
-input[type="checkbox"]:checked + label span {
-    background:url("../images/check_radio_sheet.png") -19px top no-repeat;
+.discover-pic input[type="radio"]:checked + label {
+	background: url('../images/sprite.png') -96px 0px no-repeat;
+}
+.mastercard-pic input[type="radio"]:checked + label {
+	background: url('../images/sprite.png') -144px 0px no-repeat;
 }
 
+
+.card-back-container {
+	width:62px;
+	height:32px;
+	border: none;
+	display:inline-block;
+	background-image:url("../images/sprite.png");
+	background-position:0px -124px;
+	/*visibility: hidden;*/
+}
+.card-back-amex {
+	width:70px;
+	height:33px;
+	border: none;
+	display:inline-block;
+	background-image:url("../images/sprite.png");
+	background-position:0px -81px;
+	visibility: hidden;
+}
+.security-field {
+	float: left;
+	display: block;
+	width: 100%;
+}
 .security {
 	width: 15%;
 }
-.dropdown-menu {
+.expiration-field {
+	float: left;
+	display: block;
+}
+
+.month-selector {
 	margin-left: 40px;
+}
+.year-selector {
+
 }
 button {
 	font-family: "Merriweather", serif;
