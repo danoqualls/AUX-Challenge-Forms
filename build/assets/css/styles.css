@@ -102,8 +102,6 @@ input {
 	font-family: "Open Sans", sans-serif;
 	font-size: 0.9em;
 	font-weight: 900;
-	border-top-right-radius: 0em;
-	border-bottom-right-radius: 0em;
 }
 .input-fields:required .check {
 	width: 19px;
