@@ -16,6 +16,7 @@ body {
 }
 .heading {
 	background-color: #12627a;
+	background-image: linear-gradient(#167893, #125e77);
 	color: white;
 	border-top-left-radius: 1em;
 	border-top-right-radius: 1em;
@@ -85,13 +86,13 @@ input {
 	margin: 0 auto;
 }
 .input-text {
-	margin-bottom: 100px;
 	margin-left: 40px;
+	display: block;
 }
 .input-fields {
 	border-radius: 0.5em;
 	height: 30px;
-	width: 82.62%;
+	width: 72.62%;
 	margin-left: 40px;
 	margin-top: 10px;
 	margin-bottom: 23px;
@@ -101,6 +102,56 @@ input {
 	font-family: "Open Sans", sans-serif;
 	font-size: 0.9em;
 	font-weight: 900;
+	border-top-right-radius: 0em;
+	border-bottom-right-radius: 0em;
+}
+.input-fields:required .check {
+	width: 19px;
+	height: 19px;
+	border-radius: 0.5em;
+	background-color: #fafafa;
+	border: none;
+	box-shadow: inset 0 8px 4px -8px rgba(0, 0, 0, 0.4);
+	border-top-left-radius: 0em;
+	border-bottom-left-radius: 0em;
+	display: inline-block;
+	margin-left: 0px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 38px;
+	display: table;
+}
+.input-fields:invalid .check {
+	background: url('../images/sprite.png') -1px -167px no-repeat;
+	width: 19px;
+	height: 19px;
+	border-radius: 0.5em;
+	border: none;
+	box-shadow: inset 0 8px 4px -8px rgba(0, 0, 0, 0.4);
+	border-top-left-radius: 0em;
+	border-bottom-left-radius: 0em;
+	display: inline-block;
+	margin-left: 0px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 38px;
+	display: table;
+}
+.input-fields:valid .check {
+	background: url('../images/sprite.png') -30px -167px no-repeat;
+	width: 19px;
+	height: 19px;
+	border-radius: 0.5em;
+	border: none;
+	box-shadow: inset 0 8px 4px -8px rgba(0, 0, 0, 0.4);
+	border-top-left-radius: 0em;
+	border-bottom-left-radius: 0em;
+	display: inline-block;
+	margin-left: 0px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 38px;
+	display: table;
 }
 .portfolio-address-input {
 	width: 53.77%;
@@ -149,6 +200,7 @@ li {
 .credit-card {
 	margin-top: 8px;
 	margin-right: 0px;
+	padding-left: 10px;
 }
 
 .credit-card li {
@@ -158,7 +210,8 @@ li {
     cursor:pointer;
 }
 .credit-card input {
-	display: none;
+	position: absolute;
+	left: -9999px;
 }
 
 .credit-card label {
@@ -168,11 +221,7 @@ li {
     cursor:pointer;
     text-indent: -9999px;
 }
-/*
-input[type="radio"]:unchecked + label span {
-    background:url('../images/sprite.png') -19px top no-repeat;
-}
-*/
+
 .amex-pic label {
 	background: url('../images/sprite.png') 0px -40px no-repeat;
 }
@@ -199,7 +248,6 @@ input[type="radio"]:unchecked + label span {
 	background: url('../images/sprite.png') -144px 0px no-repeat;
 }
 
-
 .card-back-container {
 	width:62px;
 	height:32px;
@@ -207,7 +255,6 @@ input[type="radio"]:unchecked + label span {
 	display:inline-block;
 	background-image:url("../images/sprite.png");
 	background-position:0px -124px;
-	/*visibility: hidden;*/
 }
 .card-back-amex {
 	width:70px;
@@ -225,12 +272,15 @@ input[type="radio"]:unchecked + label span {
 }
 .security {
 	width: 15%;
+	margin-top: 0px;
 }
 .expiration-field {
 	float: left;
 	display: block;
 }
-
+.dropdown-menu {
+	display: block;
+}
 .month-selector {
 	margin-left: 40px;
 }
@@ -244,6 +294,7 @@ button {
 	height: 38px;
 	width: 217px;
 	background-color: #7e9a2c;
+	background-image: linear-gradient(#90a933, #7e9b32);
 	border-radius: 0.5em;
 	border: none;
 	text-align: center;

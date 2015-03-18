@@ -5,8 +5,7 @@
   
  	<link href="assets/css/styles.css" rel="stylesheet">
  	<link rel="dns-prefetch" href="//ajax.googleapis.com">
- 	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
- 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 	<link href="http://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet" type="text/css">
   
   <meta charset="UTF-8">
   <meta http-equiv="cleartype" content="on">
@@ -21,20 +20,19 @@
 	</div>
 
 	<div id="main-section"
-		<form id="signup-form" action="/whoo-signup-page" method="post">
+		<form id="signupForm" action="/whoo-signup-page" method="post">
 							
 			<h2><span class="round-number">1</span> First, name your portfolio</h2>
 			<fieldset>
 				<div>
 					<label for="portfolio-name" class="input-text">Portfolio name</label>
-					<br />
 					<input type="text" id="portfolio-name" class="input-fields" required />
+					<label class="check"></label>
 				</div>
 				<div>
 					<label for="portfolio-address" id="portfolio-address" class="input-text">Portfolio address</label>
-					<br />
 					<input type="url" id="portfolio-address" class="input-fields portfolio-address-input" required />
-					<span class="sample"><span class="sample-text">.sample.com</span></span>
+					<span for="portfolio-address" class="sample"><span class="sample-text">.sample.com</span></span>
 				</div>	
 			</fieldset>
 
@@ -42,18 +40,15 @@
 				<fieldset>
 				<div>
 					<label for="name" class="input-text">Name</label>
-					<br />
 					<input type="text" id="name" class="input-fields" required />
 				</div>
 				<div>
 					<label for="email-address" id="email-address" class="input-text">Email</label>
-					<br />
 					<input type="email" id="email-address" class="input-fields" required />
 				</div>
-				<h6>NOTE: We'll never share your email, promise.</h6>
+				<h6 for="email-address">NOTE: We'll never share your email, promise.</h6>
 				<div>
 					<label for="password" id="password" class="input-text">Password</label>
-					<br />
 					<input type="password" id="password" class="input-fields" required />
 				</div>
 			</fieldset>
@@ -64,13 +59,12 @@
 			<fieldset>
 				<div>
 					<label for="card-number" class="input-text">Card Number</label>
-					<br />
 					<input type="text" id="card-number" maxlength="16" class="input-fields cc-number" required />
 				</div>
 				<div class="choose-card">
 					<ul class="credit-card">
 						<li class="amex-pic">
-							<input type="radio" id="American Express" name="cc" value="amex">
+							<input type="radio" id="American-Express" name="cc" value="amex">
 							<label for="American Express">American Express<span></span></label>
 						</li>
 						<li class="visa-pic">
@@ -87,20 +81,16 @@
 						</li>
 					</ul>
 				</div>	
-				<br />
 				<div class="security-field">
 					<label for="security-code" id="security-code" class="input-text">Security Code</label>
-					<br />
 					<input type="text" id="security-code" maxlength="4" class="input-fields security" required />
 					<div class="card-back-container">
 						<span class="card-back"></span>
 						<span class="card-back-amex"></span>
 					</div>
 				</div>
-				<br />
 				<div class="expiration-field">
 					<label for="expiration-date" id="expiration-date" class="input-text dropdown-menu">Expiration date</label>
-					<br />
 					<select name="month" class="month-selector" required>
 						<option disabled >Month</option>
 						<option value="01">01 - Jan</option>
@@ -139,5 +129,11 @@
 		</form>
 	</div><!--end "main-section"-->
 </div><!--end "foreground"-->
+
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.js"></script>
+<script type="text/javascript" src="assets/js/jquery.creditCardValidator.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+
 </body>
 </html>
